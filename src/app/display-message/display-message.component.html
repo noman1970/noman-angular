@@ -1,0 +1,17 @@
+<div *ngIf ="messages .length > 0">
+<mat-accordion>
+    <mat-expansion-panel *ngFor= 'let message of messages'>
+        <mat-expansion-panel-header>
+            {{message.title}}
+        </mat-expansion-panel-header>
+        <mat-panel-description>
+            {{message.description}}
+        </mat-panel-description>
+    </mat-expansion-panel>
+
+</mat-accordion>
+</div>
+<div *ngIf = "messages.length == 0">
+    <p> There is no message to display </p>
+
+</div>
