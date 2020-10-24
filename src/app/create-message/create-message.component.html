@@ -2,18 +2,15 @@
 <form (submit) = "onAddMessage(msgForm)" #msgForm = "ngForm">
 
 <mat-form-field>
-    <input matInput type="text" 
+    <input matInput type="text"
     name="title"
     placeholder="Enter Title" ngModel>
 </mat-form-field>
-
 <mat-form-field>
     <input matInput type="text"
     name="description"
-    placeholder="Enter Description" ngModel>
+    placeholder="Enter Discription" ngModel>
 </mat-form-field>
-
-<button mat-buttpn type="submit"> ADD MESSAGE </button>
-
+<button mat-button type="submit"> Add MESSAGE </button>
 
 </form>
